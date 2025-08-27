@@ -14,7 +14,7 @@ import java.io.IOException;
 
 public class PIMTest extends BasePage {
     @Test(priority=1,groups = "smoke",description = "Admin Login Successfully!!",enabled = false)
-    public void doLoginWithValidCred() throws InterruptedException {
+    public void doLoginWithValidCred() throws InterruptedException, IOException {
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         LoginPages loginPages=new LoginPages(driver);
         String username= System.getProperty("username");
