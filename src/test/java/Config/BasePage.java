@@ -17,6 +17,7 @@ public class BasePage {
     public WebDriver driver;
     @BeforeTest
 
+
     public void StartBrowser(){
         extent=Utils.getInstance();
         test=extent.createTest("Browser Configuration Successfully");
